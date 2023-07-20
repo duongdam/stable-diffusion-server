@@ -222,7 +222,7 @@ def _generate(task, engine=None):
                 'mime_type': 'image/png',
                 'nsfw': result['nsfw']
             })
-        output_data[ 'images' ] = images        
+        output_data[ 'images' ] = images
     except RuntimeError as e:
         output_data[ 'status' ] = 'failure'
         output_data[ 'message' ] = 'A RuntimeError occurred. You probably ran out of GPU memory. Check the server logs for more details.'
@@ -230,4 +230,4 @@ def _generate(task, engine=None):
     return flask.jsonify( output_data )
 
 if __name__ == '__main__':
-    app.run( host='0.0.0.0', port=1337, debug=False )
+    app.run( host='0.0.0.0', port=5000, debug=False )

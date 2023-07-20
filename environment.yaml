@@ -1,4 +1,4 @@
-name: sd-api-server
+name: sd-api
 channels:
   - pytorch
   - defaults
