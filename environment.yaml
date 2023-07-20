@@ -11,6 +11,6 @@ dependencies:
   - numpy=1.19.2
   - pip:
       - diffusers
-      - transformers==4.19.2
+      - transformers==4.27.1
       - Pillow
       - Flask
